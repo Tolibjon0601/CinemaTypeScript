@@ -1,0 +1,122 @@
+body{
+  background-color: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.auth_input::before {
+  content: "";
+  background-image: url(../public/image/flag_icon.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+
+}
+.facebook_btn::before{
+  content: "";
+  background-image: url(../public/image/icon_facebook.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+
+}
+
+.google_btn::before{
+  content: "";
+  background-image: url(../public/image/icon_google.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.icon:hover {
+  fill: red;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.spinner {
+  font-size: 48px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  /* opacity: 0.4; */
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+
+}
+
+.swiper-slide img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.search_input{
+  padding-left: 40px;
+  background: url('./image/input_icon.svg') no-repeat;
+  background-position: 10px ;
+  background-size: 24px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height:48px;
+  background-color: #1d1d1d;
+  backdrop-filter: blur(30px);
+  border-radius: 24px;
+
+}
+
+.swiper-button-prev {
+  left: -60px;
+}
+
+.swiper-button-next {
+  right: -60px;
+}
+
